@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-10-23 12:54:04.024855",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "director_name",
+  "phone",
+  "pan",
+  "din_status",
+  "column_break_ouse",
+  "email",
+  "address",
+  "din"
+ ],
+ "fields": [
+  {
+   "fieldname": "director_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Director Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "Pan"
+  },
+  {
+   "fieldname": "din_status",
+   "fieldtype": "Data",
+   "label": "DIN Status"
+  },
+  {
+   "fieldname": "column_break_ouse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "din",
+   "fieldtype": "Data",
+   "label": "DIN",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-23 16:46:50.107820",
+ "modified_by": "Administrator",
+ "module": "Ext Data Subscription",
+ "name": "Director",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "director_name",
+ "track_changes": 1,
+ "translated_doctype": 1
+}

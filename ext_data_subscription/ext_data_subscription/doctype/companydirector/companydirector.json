@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-10-23 13:50:02.903022",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "appointment_date",
+  "cessation_date",
+  "designation",
+  "column_break_fvld",
+  "status",
+  "director_id",
+  "company_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date"
+  },
+  {
+   "fieldname": "cessation_date",
+   "fieldtype": "Date",
+   "label": "Cessation Date"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_fvld",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "ACTIVE",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "ACTIVE\nINACTIVE",
+   "reqd": 1,
+   "sort_options": 1
+  },
+  {
+   "fieldname": "director_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Director ID",
+   "not_nullable": 1,
+   "options": "Director",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company ID",
+   "not_nullable": 1,
+   "options": "Company",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-23 13:59:56.776511",
+ "modified_by": "Administrator",
+ "module": "Ext Data Subscription",
+ "name": "CompanyDirector",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "creation",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "translated_doctype": 1
+}

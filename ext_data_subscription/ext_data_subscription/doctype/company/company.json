@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-10-23 13:14:30.559840",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "cin",
+  "llpin",
+  "roc_id",
+  "registration_number",
+  "pan",
+  "nic_code",
+  "nse_symbol",
+  "column_break_dorl",
+  "bse_code",
+  "isin_code",
+  "category",
+  "subcategory",
+  "company_class",
+  "authorized_capital",
+  "paid_up_capital",
+  "incorporation_date",
+  "column_break_ynna",
+  "registered_address",
+  "stock_market_listed",
+  "status",
+  "status_reason",
+  "industry_category",
+  "last_agm_date",
+  "balance_sheet_date",
+  "mca_compliance_status",
+  "register_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "not_nullable": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "roc_id",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "ROC ID",
+   "options": "ROC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nic_code",
+   "fieldtype": "Data",
+   "label": "NIC Code"
+  },
+  {
+   "fieldname": "isin_code",
+   "fieldtype": "Data",
+   "label": "ISIN Code"
+  },
+  {
+   "fieldname": "column_break_dorl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cin",
+   "fieldtype": "Data",
+   "label": "CIN",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "nse_symbol",
+   "fieldtype": "Data",
+   "label": "NSE Symbol"
+  },
+  {
+   "fieldname": "bse_code",
+   "fieldtype": "Data",
+   "label": "BSE Code"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "default": "PRIVATE",
+   "fieldname": "company_class",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Company Class",
+   "options": "PRIVATE\nPUBLIC\nONE_PERSON_COMPANY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ynna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "llpin",
+   "fieldtype": "Data",
+   "label": "LLPIN",
+   "unique": 1
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "subcategory",
+   "fieldtype": "Data",
+   "label": "Subcategory"
+  },
+  {
+   "fieldname": "authorized_capital",
+   "fieldtype": "Data",
+   "label": "Authorized Capital"
+  },
+  {
+   "fieldname": "paid_up_capital",
+   "fieldtype": "Data",
+   "label": "Paid Up Capital"
+  },
+  {
+   "fieldname": "incorporation_date",
+   "fieldtype": "Date",
+   "label": "Incorporation Date"
+  },
+  {
+   "fieldname": "registered_address",
+   "fieldtype": "Data",
+   "label": "Registered Address"
+  },
+  {
+   "default": "0",
+   "fieldname": "stock_market_listed",
+   "fieldtype": "Check",
+   "label": "Stock Market Listed"
+  },
+  {
+   "default": "ACTIVE",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "ACTIVE\nINACTIVE",
+   "sort_options": 1
+  },
+  {
+   "fieldname": "status_reason",
+   "fieldtype": "Data",
+   "label": "Status Reason"
+  },
+  {
+   "fieldname": "industry_category",
+   "fieldtype": "Data",
+   "label": "Industry Category"
+  },
+  {
+   "fieldname": "last_agm_date",
+   "fieldtype": "Date",
+   "label": "Last AGM Date"
+  },
+  {
+   "fieldname": "balance_sheet_date",
+   "fieldtype": "Date",
+   "label": "Balance Sheet Date"
+  },
+  {
+   "fieldname": "mca_compliance_status",
+   "fieldtype": "Date",
+   "label": "MCA Compliance Status"
+  },
+  {
+   "fieldname": "register_email",
+   "fieldtype": "Data",
+   "label": "Register Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-23 16:57:47.266665",
+ "modified_by": "Administrator",
+ "module": "Ext Data Subscription",
+ "name": "Company",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "company_name",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "company_name",
+ "track_changes": 1,
+ "translated_doctype": 1
+}
