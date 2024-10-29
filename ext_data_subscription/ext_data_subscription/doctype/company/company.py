@@ -35,3 +35,14 @@ class Company(Document):
 			roc = frappe.db.get_value("ROC", {"name": self.roc})
 			if not roc:
 				frappe.throw("Invalid ROC. It should be a valid ROC name.")
+
+	def before_save(self):
+		self.validate()
+		if self.cin:
+			self.name = self.cin
+		elif self.llpin:
+			self.name = self.llpin
+		elif self.pan:
+			self.name = self.pan
+		else:
+			frappe.throw("CIN, LLPIN or PAN is required.")
