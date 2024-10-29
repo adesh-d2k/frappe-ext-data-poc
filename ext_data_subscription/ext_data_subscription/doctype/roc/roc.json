@@ -1,54 +1,60 @@
 {
  "actions": [],
- "allow_import": 1,
- "autoname": "autoincrement",
- "creation": "2024-10-23 12:29:41.666094",
+ "allow_rename": 1,
+ "autoname": "field:roc",
+ "creation": "2024-10-29 10:13:14.576121",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "roc_name",
-  "state_name",
-  "parent_roc",
-  "status"
+  "roc",
+  "state",
+  "roc_parent"
  ],
  "fields": [
   {
-   "default": "ACTIVE",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "ACTIVE\nINACTIVE"
-  },
-  {
-   "fieldname": "roc_name",
+   "fieldname": "roc",
    "fieldtype": "Data",
-   "label": "ROC Name",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "ROC",
    "reqd": 1,
    "unique": 1
   },
   {
-   "default": "state_name",
-   "fieldname": "state_name",
+   "fieldname": "state",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
    "in_list_view": 1,
-   "label": "State Name",
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "State",
    "options": "State",
    "reqd": 1
   },
   {
-   "fieldname": "parent_roc",
+   "allow_in_quick_entry": 1,
+   "fieldname": "roc_parent",
    "fieldtype": "Link",
-   "label": "Parent roc",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "ROC Parent",
    "options": "ROC"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-24 16:55:35.471064",
+ "modified": "2024-10-29 10:18:24.941855",
  "modified_by": "Administrator",
  "module": "Ext Data Subscription",
  "name": "ROC",
- "naming_rule": "Autoincrement",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -67,9 +73,7 @@
  "quick_entry": 1,
  "show_title_field_in_link": 1,
  "sort_field": "creation",
- "sort_order": "ASC",
+ "sort_order": "DESC",
  "states": [],
- "title_field": "roc_name",
- "track_changes": 1,
- "translated_doctype": 1
+ "title_field": "roc"
 }
